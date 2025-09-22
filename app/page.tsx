@@ -244,7 +244,7 @@ export default function SageLandingPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-blue-50">
+      {/* <section className="py-20 px-4 bg-blue-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
             Quem Usa, Confia
@@ -312,6 +312,43 @@ export default function SageLandingPage() {
                     </p>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section> */}
+      <section className="py-20 px-4 bg-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+            Por que escolher o SAGE?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Agilidade</h3>
+                <p className="text-gray-700">
+                  Processos otimizados e respostas mais rápidas para sua equipe.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">Segurança</h3>
+                <p className="text-gray-700">
+                  Informações centralizadas e protegidas com alto padrão de
+                  segurança.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Gestão Estratégica
+                </h3>
+                <p className="text-gray-700">
+                  Relatórios inteligentes para apoiar decisões baseadas em
+                  dados.
+                </p>
               </CardContent>
             </Card>
           </div>
