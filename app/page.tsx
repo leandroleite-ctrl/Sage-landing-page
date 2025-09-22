@@ -16,6 +16,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SageLandingPage() {
   return (
@@ -31,12 +32,6 @@ export default function SageLandingPage() {
             sistema de alerta inteligente, garantindo uma resposta rápida e
             eficiente para residentes e tranquilidade para sua equipe.
           </p>
-          <Button
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
-          >
-            Solicite uma Demonstração
-          </Button>
         </div>
         <div className="absolute inset-0 opacity-10">
           <img
@@ -338,7 +333,7 @@ export default function SageLandingPage() {
             <CardContent className="p-8">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div>
+                  {/* <div>
                     <Input placeholder="Nome completo" className="w-full" />
                   </div>
                   <div>
@@ -362,15 +357,16 @@ export default function SageLandingPage() {
                       placeholder="Telefone"
                       className="w-full"
                     />
-                  </div>
+                  </div>*/}
                 </div>
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg"
-                >
-                  Quero uma Demonstração
-                </Button>
+                <Link href="/contato">
+                  <Button
+                    size="lg"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg"
+                  >
+                    Contato
+                  </Button>
+                </Link>
               </form>
             </CardContent>
           </Card>
@@ -393,7 +389,7 @@ export default function SageLandingPage() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="#"
+                    href="/sobre"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Sobre Nós
@@ -401,7 +397,7 @@ export default function SageLandingPage() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/contato"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Contato
@@ -409,7 +405,7 @@ export default function SageLandingPage() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/privacidade"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Política de Privacidade
@@ -421,16 +417,42 @@ export default function SageLandingPage() {
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center">
-                  <Phone className="w-4 h-4 mr-2" />
-                  <span>(11) 9999-9999</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="w-4 h-4 mr-2" />
-                  <span>contato@sage.com.br</span>
+                  <span>
+                    {" "}
+                    <ul>
+                      <li>
+                        {" "}
+                        <a
+                          href="mailto:alanfranciscos@gmail.com"
+                          className=" hover:text-blue-700 font-medium"
+                        >
+                          alanfranciscos@gmail.com
+                        </a>
+                      </li>
+                      <li>
+                        {" "}
+                        <a
+                          href="mailto:carlos_eduardo_a.r@outlook.com"
+                          className=" hover:text-blue-700 font-medium"
+                        >
+                          carlos_eduardo_a.r@outlook.com
+                        </a>
+                      </li>
+                      <li>
+                        {" "}
+                        <a
+                          href="mailto:leandroleite@fai-mg.br"
+                          className=" hover:text-blue-700 font-medium"
+                        >
+                          leandroleite@fai-mg.br
+                        </a>
+                      </li>{" "}
+                    </ul>
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
-                  <span>São Paulo, SP</span>
+                  <span>Santa Rita do Sapucaí, MG</span>
                 </div>
               </div>
             </div>
@@ -438,19 +460,8 @@ export default function SageLandingPage() {
               <h4 className="text-lg font-semibold mb-4">Redes Sociais</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Facebook
-                </a>
-                <a
-                  href="#"
+                  href="https://www.instagram.com/faitec_sage/"
+                  target="_blank"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Instagram
